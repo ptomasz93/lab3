@@ -107,63 +107,65 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <a name="l00007"></a>00007 <span class="comment">//#define R 1000 //rozmiar</span>
 <a name="l00008"></a>00008 
 <a name="l00009"></a>00009 <span class="preprocessor">#include &lt;iostream&gt;</span>
-<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="stos_8hh.html">stos.hh</a>&quot;</span>
-<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;<a class="code" href="stos__lista_8hh.html">stos_lista.hh</a>&quot;</span>
+<a name="l00010"></a>00010 <span class="comment">//#include &quot;stos.hh&quot;</span>
+<a name="l00011"></a>00011 <span class="comment">//#include &quot;stos_lista.hh&quot;</span>
 <a name="l00012"></a>00012 <span class="comment">//#include &quot;kolejka_lista.hh&quot;</span>
 <a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="generator_8hh.html">generator.hh</a>&quot;</span>
 <a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="stoper_8hh.html">stoper.hh</a>&quot;</span>
-<a name="l00015"></a>00015 <span class="keyword">using namespace </span>std;
-<a name="l00016"></a>00016 
-<a name="l00017"></a><a class="code" href="main_8cpp.html#a5b91f08c2050b0e3b6b88de7a09bb6f8">00017</a> <span class="preprocessor">#define SREDNIA_Z 20 ///z ilu powtirzen liczyc srednia</span>
-<a name="l00018"></a>00018 <span class="preprocessor"></span>
-<a name="l00019"></a><a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">00019</a> <span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()
-<a name="l00020"></a>00020 {
-<a name="l00021"></a>00021 <span class="comment">//      kolejka danych;</span>
-<a name="l00022"></a>00022 <span class="comment">//      stos danych;</span>
-<a name="l00023"></a>00023         <a class="code" href="classstos__l.html">stos_l</a> danych;
-<a name="l00024"></a>00024         <a class="code" href="classczas.html">czas</a> stoper;
-<a name="l00025"></a>00025         <span class="keywordtype">double</span> suma;
-<a name="l00026"></a>00026         fstream wejsciowe, wyniki;
-<a name="l00027"></a>00027         wyniki.open(<span class="stringliteral">&quot;czas_stos_t+1.txt&quot;</span>,ios::out);
-<a name="l00028"></a>00028         <span class="keywordtype">int</span> rozmiar;
-<a name="l00029"></a>00029         <span class="keywordtype">int</span> sr;
-<a name="l00030"></a>00030         <span class="keywordtype">int</span> il=0;
-<a name="l00031"></a>00031         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> b=0;b&lt;20;b++)
-<a name="l00032"></a>00032         {
-<a name="l00033"></a>00033                 il+=50000;
-<a name="l00034"></a>00034 
-<a name="l00035"></a>00035                 <a class="code" href="generator_8cpp.html#a8a338f908bb9996d5b01aab4439e8a56" title="generuje plik *.txt o zadanej ilosci danych i nazwie">generuj</a>(<span class="stringliteral">&quot;wejsciowe&quot;</span>,il);
-<a name="l00036"></a>00036                 <span class="keywordflow">for</span>(sr=0;sr&lt;<a class="code" href="main_8cpp.html#a5b91f08c2050b0e3b6b88de7a09bb6f8">SREDNIA_Z</a>;sr++)
-<a name="l00037"></a>00037                 {
-<a name="l00038"></a>00038                         wejsciowe.open(<span class="stringliteral">&quot;wejsciowe&quot;</span>);
-<a name="l00039"></a>00039                         wejsciowe&gt;&gt;rozmiar;
-<a name="l00040"></a>00040                                                 stoper.<a class="code" href="classczas.html#a1e4c793526806f459e7f5c8c4a3ae29f" title="start pomiaru zapisuje stan zegara">start</a>();
-<a name="l00041"></a>00041                                 <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;rozmiar;i++)
-<a name="l00042"></a>00042                                 {
-<a name="l00043"></a>00043                                         <span class="keywordtype">int</span> a;
-<a name="l00044"></a>00044                                         wejsciowe&gt;&gt;a;
-<a name="l00045"></a>00045                                         danych.<a class="code" href="classstos__l.html#abf3d6a7f9835928a68998e9afc569ce8">push</a>(a);
-<a name="l00046"></a>00046                                 }
-<a name="l00047"></a>00047                                 stoper.<a class="code" href="classczas.html#a27f391e3c6bfb1f15f97c61bf403eb2d" title="koniec pomiaru zapisuje stan zegara">stop</a>();
-<a name="l00048"></a>00048                                         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;rozmiar;i++)
-<a name="l00049"></a>00049                                         {
-<a name="l00050"></a>00050                                         danych.<a class="code" href="classstos__l.html#a83201bb86938e636121af57fa989f763" title="sciaga zmienna ze stosu">pop</a>();
-<a name="l00051"></a>00051                                         }
-<a name="l00052"></a>00052                         wejsciowe.close();
-<a name="l00053"></a>00053                         suma+=stoper.<a class="code" href="classczas.html#a253df7797ca3cc3447d24c3c9477768e" title="zwraca wynik pomiaru">wynik</a>();
-<a name="l00054"></a>00054                 }
-<a name="l00055"></a>00055                 cout&lt;&lt;rozmiar&lt;&lt;<span class="stringliteral">&quot;  &quot;</span>&lt;&lt;suma/sr&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;
-<a name="l00056"></a>00056                 wyniki&lt;&lt;rozmiar&lt;&lt;<span class="stringliteral">&quot;  &quot;</span>&lt;&lt;suma/sr&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;
-<a name="l00057"></a>00057                 suma=0;
-<a name="l00058"></a>00058         <span class="comment">//      cout&lt;&lt;&quot;teraz stos ma rozmiar: &quot;&lt;&lt;danych.size()&lt;&lt;&quot;\n&quot;&lt;&lt;&quot;jest pusty? &quot;&lt;&lt;danych.isempty()&lt;&lt;&quot;\n&quot;;</span>
-<a name="l00059"></a>00059         <span class="comment">//      cout&lt;&lt;&quot;sciagamy i wyswietlamy;\n&quot;;</span>
-<a name="l00060"></a>00060 
-<a name="l00061"></a>00061         }
-<a name="l00062"></a>00062 <span class="comment">//      cout&lt;&lt;&quot;teraz stos ma rozmiar: &quot;&lt;&lt;danych.size()&lt;&lt;&quot;\n&quot;&lt;&lt;&quot;jest pusty? &quot;&lt;&lt;danych.isempty()&lt;&lt;&quot;\n&quot;;</span>
-<a name="l00063"></a>00063 <span class="comment">//      wyniki.close();</span>
-<a name="l00064"></a>00064 }
-<a name="l00065"></a>00065 
-<a name="l00066"></a>00066 
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="kolejka__tablica_8hh.html">kolejka_tablica.hh</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="keyword">using namespace </span>std;
+<a name="l00017"></a>00017 
+<a name="l00018"></a><a class="code" href="main_8cpp.html#a5b91f08c2050b0e3b6b88de7a09bb6f8">00018</a> <span class="preprocessor">#define SREDNIA_Z 20 ///z ilu powtirzen liczyc srednia</span>
+<a name="l00019"></a>00019 <span class="preprocessor"></span>
+<a name="l00020"></a><a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">00020</a> <span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()
+<a name="l00021"></a>00021 {
+<a name="l00022"></a>00022 <span class="comment">//      kolejka danych;</span>
+<a name="l00023"></a>00023 <span class="comment">//      stos danych;</span>
+<a name="l00024"></a>00024 <span class="comment">//      stos_l danych;</span>
+<a name="l00025"></a>00025         <a class="code" href="classczas.html">czas</a> stoper;
+<a name="l00026"></a>00026         <a class="code" href="classkolejka__t.html">kolejka_t</a> danych;
+<a name="l00027"></a>00027         <span class="keywordtype">double</span> suma;
+<a name="l00028"></a>00028         fstream wejsciowe, wyniki;
+<a name="l00029"></a>00029         wyniki.open(<span class="stringliteral">&quot;czas_kolejka_t.txt&quot;</span>,ios::out);
+<a name="l00030"></a>00030         <span class="keywordtype">int</span> rozmiar;
+<a name="l00031"></a>00031         <span class="keywordtype">int</span> sr;
+<a name="l00032"></a>00032         <span class="keywordtype">int</span> il=0;
+<a name="l00033"></a>00033         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> b=0;b&lt;20;b++)
+<a name="l00034"></a>00034         {
+<a name="l00035"></a>00035                 il+=50000;
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037                 <a class="code" href="generator_8cpp.html#a8a338f908bb9996d5b01aab4439e8a56" title="generuje plik *.txt o zadanej ilosci danych i nazwie">generuj</a>(<span class="stringliteral">&quot;wejsciowe&quot;</span>,il);
+<a name="l00038"></a>00038                 <span class="keywordflow">for</span>(sr=0;sr&lt;<a class="code" href="main_8cpp.html#a5b91f08c2050b0e3b6b88de7a09bb6f8">SREDNIA_Z</a>;sr++)
+<a name="l00039"></a>00039                 {
+<a name="l00040"></a>00040                         wejsciowe.open(<span class="stringliteral">&quot;wejsciowe&quot;</span>);
+<a name="l00041"></a>00041                         wejsciowe&gt;&gt;rozmiar;
+<a name="l00042"></a>00042                                                 stoper.<a class="code" href="classczas.html#a1e4c793526806f459e7f5c8c4a3ae29f" title="start pomiaru zapisuje stan zegara">start</a>();
+<a name="l00043"></a>00043                                 <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;rozmiar;i++)
+<a name="l00044"></a>00044                                 {
+<a name="l00045"></a>00045                                         <span class="keywordtype">int</span> a;
+<a name="l00046"></a>00046                                         wejsciowe&gt;&gt;a;
+<a name="l00047"></a>00047                                         danych.<a class="code" href="classkolejka__t.html#a999571eae973772db02900d7cdbb6b92" title="dodaje zmienn do kolejka_tu">push</a>(a);
+<a name="l00048"></a>00048                                 }
+<a name="l00049"></a>00049                                 stoper.<a class="code" href="classczas.html#a27f391e3c6bfb1f15f97c61bf403eb2d" title="koniec pomiaru zapisuje stan zegara">stop</a>();
+<a name="l00050"></a>00050                                         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;rozmiar;i++)
+<a name="l00051"></a>00051                                         {
+<a name="l00052"></a>00052                                         danych.<a class="code" href="classkolejka__t.html#a132fa58af8ce799e9ddcebd94cb8354c" title="sciaga zmienna ze kolejka_tu">pop</a>();
+<a name="l00053"></a>00053                                         }
+<a name="l00054"></a>00054                         wejsciowe.close();
+<a name="l00055"></a>00055                         suma+=stoper.<a class="code" href="classczas.html#a253df7797ca3cc3447d24c3c9477768e" title="zwraca wynik pomiaru">wynik</a>();
+<a name="l00056"></a>00056                 }
+<a name="l00057"></a>00057                 cout&lt;&lt;rozmiar&lt;&lt;<span class="stringliteral">&quot;  &quot;</span>&lt;&lt;suma/sr&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;
+<a name="l00058"></a>00058                 wyniki&lt;&lt;rozmiar&lt;&lt;<span class="stringliteral">&quot;  &quot;</span>&lt;&lt;suma/sr&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;
+<a name="l00059"></a>00059                 suma=0;
+<a name="l00060"></a>00060         <span class="comment">//      cout&lt;&lt;&quot;teraz stos ma rozmiar: &quot;&lt;&lt;danych.size()&lt;&lt;&quot;\n&quot;&lt;&lt;&quot;jest pusty? &quot;&lt;&lt;danych.isempty()&lt;&lt;&quot;\n&quot;;</span>
+<a name="l00061"></a>00061         <span class="comment">//      cout&lt;&lt;&quot;sciagamy i wyswietlamy;\n&quot;;</span>
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063         }
+<a name="l00064"></a>00064 <span class="comment">//      cout&lt;&lt;&quot;teraz stos ma rozmiar: &quot;&lt;&lt;danych.size()&lt;&lt;&quot;\n&quot;&lt;&lt;&quot;jest pusty? &quot;&lt;&lt;danych.isempty()&lt;&lt;&quot;\n&quot;;</span>
+<a name="l00065"></a>00065 <span class="comment">//      wyniki.close();</span>
+<a name="l00066"></a>00066 }
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068 
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -184,7 +186,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
     <ul>
       <li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a>      </li>
 
-    <li class="footer">Wygenerowano Mon Mar 17 2014 02:24:11 dla My Project programem
+    <li class="footer">Wygenerowano Mon Mar 17 2014 03:29:00 dla My Project programem
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

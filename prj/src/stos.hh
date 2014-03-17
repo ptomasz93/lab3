@@ -13,7 +13,7 @@
  * \zwieksz_dwa()-zwieksza dwukrotnie rozmiar tablicy
  * \zwieksz_o_1()-zwieksza o 1 rozmiar tablicy;
  */
-#define ZWIEKSZ zwieksz_o_1();/// wybieramy sposub zwiekszania stosu
+#define ZWIEKSZ zwieksz_o_1();/// wybieramy sposob zwiekszania stosu
 
 #include <iostream>
 #include <cstring>

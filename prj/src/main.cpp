@@ -7,11 +7,12 @@
 //#define R 1000 //rozmiar
 
 #include <iostream>
-#include "stos.hh"
-#include "stos_lista.hh"
+//#include "stos.hh"
+//#include "stos_lista.hh"
 //#include "kolejka_lista.hh"
 #include "generator.hh"
 #include "stoper.hh"
+#include "kolejka_tablica.hh"
 using namespace std;
 
 #define SREDNIA_Z 20 ///z ilu powtirzen liczyc srednia
@@ -20,11 +21,12 @@ int main()
 {
 //	kolejka danych;
 //	stos danych;
-	stos_l danych;
+//	stos_l danych;
 	czas stoper;
+	kolejka_t danych;
 	double suma;
 	fstream wejsciowe, wyniki;
-	wyniki.open("czas_stos_t+1.txt",ios::out);
+	wyniki.open("czas_kolejka_t.txt",ios::out);
 	int rozmiar;
 	int sr;
 	int il=0;

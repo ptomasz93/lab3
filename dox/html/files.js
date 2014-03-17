@@ -4,6 +4,8 @@ var files =
     [ "prj/src/generator.hh", "generator_8hh.html", "generator_8hh" ],
     [ "prj/src/kolejka_lista.cpp", "kolejka__lista_8cpp.html", null ],
     [ "prj/src/kolejka_lista.hh", "kolejka__lista_8hh.html", null ],
+    [ "prj/src/kolejka_tablica.cpp", "kolejka__tablica_8cpp.html", null ],
+    [ "prj/src/kolejka_tablica.hh", "kolejka__tablica_8hh.html", null ],
     [ "prj/src/main.cpp", "main_8cpp.html", "main_8cpp" ],
     [ "prj/src/stoper.hh", "stoper_8hh.html", "stoper_8hh" ],
     [ "prj/src/stos.cpp", "stos_8cpp.html", null ],
