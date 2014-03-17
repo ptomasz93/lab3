@@ -35,8 +35,8 @@ void stos::zwieksz_dwa()
 		s_tab = tab;
 		tab = new int[rozmiar*2];
 		kopiuj(s_tab);
-	//	if (s_tab != NULL)
-	//	delete[] s_tab;
+		if (s_tab != NULL)
+		delete[] s_tab;
 		rozmiar *= 2;
 	}
 }
@@ -49,7 +49,8 @@ void stos::zwieksz_o_1()
 	s_tab=tab;
 	tab=new int[rozmiar+1];
 	kopiuj(s_tab);
-//	delete [] s_tab;
+	if (s_tab != NULL)
+	delete  s_tab;
 	rozmiar+=1;
 }
 
