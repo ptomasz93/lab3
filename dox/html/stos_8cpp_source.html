@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>stos_kolejka: Plik źródłowy prj/src/stos.cpp</title>
+<title>My Project: Plik źródłowy prj/src/stos.cpp</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -32,7 +32,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">stos_kolejka
+   <div id="projectname">My Project
    
    </div>
    
@@ -128,8 +128,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <a name="l00035"></a>00035                 s_tab = <a class="code" href="classstos.html#a71155717d44c2156515be8edb1139358">tab</a>;
 <a name="l00036"></a>00036                 <a class="code" href="classstos.html#a71155717d44c2156515be8edb1139358">tab</a> = <span class="keyword">new</span> <span class="keywordtype">int</span>[<a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">rozmiar</a>*2];
 <a name="l00037"></a>00037                 <a class="code" href="classstos.html#ae5ace69c31d9de2f24eb872895216bf3" title="kopiuje zawartosc jednej tablicy do drugiej">kopiuj</a>(s_tab);
-<a name="l00038"></a>00038         <span class="comment">//      if (s_tab != NULL)</span>
-<a name="l00039"></a>00039         <span class="comment">//      delete[] s_tab;</span>
+<a name="l00038"></a>00038                 <span class="keywordflow">if</span> (s_tab != NULL)
+<a name="l00039"></a>00039                 <span class="keyword">delete</span>[] s_tab;
 <a name="l00040"></a>00040                 <a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">rozmiar</a> *= 2;
 <a name="l00041"></a>00041         }
 <a name="l00042"></a>00042 }
@@ -139,63 +139,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <a name="l00049"></a>00049         s_tab=<a class="code" href="classstos.html#a71155717d44c2156515be8edb1139358">tab</a>;
 <a name="l00050"></a>00050         <a class="code" href="classstos.html#a71155717d44c2156515be8edb1139358">tab</a>=<span class="keyword">new</span> <span class="keywordtype">int</span>[<a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">rozmiar</a>+1];
 <a name="l00051"></a>00051         <a class="code" href="classstos.html#ae5ace69c31d9de2f24eb872895216bf3" title="kopiuje zawartosc jednej tablicy do drugiej">kopiuj</a>(s_tab);
-<a name="l00052"></a>00052 <span class="comment">//      delete [] s_tab;</span>
-<a name="l00053"></a>00053         <a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">rozmiar</a>+=1;
-<a name="l00054"></a>00054 }
-<a name="l00055"></a>00055 
-<a name="l00061"></a><a class="code" href="classstos.html#aeabdfcdd334943a4a22a6f095bd7a873">00061</a> <span class="keywordtype">void</span> <a class="code" href="classstos.html#aeabdfcdd334943a4a22a6f095bd7a873" title="Zmniejsza rozmar tablicy dwukrotnie.">stos::zmniejsz</a>()
-<a name="l00062"></a>00062 {
-<a name="l00063"></a>00063         <span class="keywordtype">int</span>* s_tab;
-<a name="l00064"></a>00064         <span class="keywordflow">if</span> (<a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">rozmiar</a>==0)<span class="keywordflow">return</span>;
-<a name="l00065"></a>00065         <span class="keywordflow">if</span> (<a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>==0)<span class="keyword">delete</span>[] <a class="code" href="classstos.html#a71155717d44c2156515be8edb1139358">tab</a>;
-<a name="l00066"></a>00066         <span class="keywordflow">else</span>
-<a name="l00067"></a>00067         {
-<a name="l00068"></a>00068                 s_tab = <a class="code" href="classstos.html#a71155717d44c2156515be8edb1139358">tab</a>;
-<a name="l00069"></a>00069                 <a class="code" href="classstos.html#a71155717d44c2156515be8edb1139358">tab</a> = <span class="keyword">new</span> <span class="keywordtype">int</span>[<a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">rozmiar</a>/2];
-<a name="l00070"></a>00070                 <a class="code" href="classstos.html#ae5ace69c31d9de2f24eb872895216bf3" title="kopiuje zawartosc jednej tablicy do drugiej">kopiuj</a>(s_tab);
-<a name="l00071"></a>00071                 <span class="keywordflow">if</span> (s_tab != NULL)
-<a name="l00072"></a>00072                         <span class="keyword">delete</span>[] s_tab;
-<a name="l00073"></a>00073                 <a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">rozmiar</a> /= 2;
-<a name="l00074"></a>00074         }
-<a name="l00075"></a>00075 }
-<a name="l00076"></a>00076 
+<a name="l00052"></a>00052         <span class="keywordflow">if</span> (s_tab != NULL)
+<a name="l00053"></a>00053         <span class="keyword">delete</span>  s_tab;
+<a name="l00054"></a>00054         <a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">rozmiar</a>+=1;
+<a name="l00055"></a>00055 }
+<a name="l00056"></a>00056 
+<a name="l00062"></a><a class="code" href="classstos.html#aeabdfcdd334943a4a22a6f095bd7a873">00062</a> <span class="keywordtype">void</span> <a class="code" href="classstos.html#aeabdfcdd334943a4a22a6f095bd7a873" title="Zmniejsza rozmar tablicy dwukrotnie.">stos::zmniejsz</a>()
+<a name="l00063"></a>00063 {
+<a name="l00064"></a>00064         <span class="keywordtype">int</span>* s_tab;
+<a name="l00065"></a>00065         <span class="keywordflow">if</span> (<a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">rozmiar</a>==0)<span class="keywordflow">return</span>;
+<a name="l00066"></a>00066         <span class="keywordflow">if</span> (<a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>==0)<span class="keyword">delete</span>[] <a class="code" href="classstos.html#a71155717d44c2156515be8edb1139358">tab</a>;
+<a name="l00067"></a>00067         <span class="keywordflow">else</span>
+<a name="l00068"></a>00068         {
+<a name="l00069"></a>00069                 s_tab = <a class="code" href="classstos.html#a71155717d44c2156515be8edb1139358">tab</a>;
+<a name="l00070"></a>00070                 <a class="code" href="classstos.html#a71155717d44c2156515be8edb1139358">tab</a> = <span class="keyword">new</span> <span class="keywordtype">int</span>[<a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">rozmiar</a>/2];
+<a name="l00071"></a>00071                 <a class="code" href="classstos.html#ae5ace69c31d9de2f24eb872895216bf3" title="kopiuje zawartosc jednej tablicy do drugiej">kopiuj</a>(s_tab);
+<a name="l00072"></a>00072                 <span class="keywordflow">if</span> (s_tab != NULL)
+<a name="l00073"></a>00073                         <span class="keyword">delete</span>[] s_tab;
+<a name="l00074"></a>00074                 <a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">rozmiar</a> /= 2;
+<a name="l00075"></a>00075         }
+<a name="l00076"></a>00076 }
 <a name="l00077"></a>00077 
-<a name="l00078"></a>00078 <span class="comment">//----------------------------------------------------------------------</span>
-<a name="l00079"></a>00079 <span class="comment">//*****************************PUBLIC***********************************</span>
-<a name="l00080"></a>00080 <span class="comment">//----------------------------------------------------------------------</span>
-<a name="l00081"></a>00081 
-<a name="l00086"></a><a class="code" href="classstos.html#afb387ac69250038334f6d8099b6a2421">00086</a> <a class="code" href="classstos.html#afb387ac69250038334f6d8099b6a2421" title="Konstruktor.">stos::stos</a>()
-<a name="l00087"></a>00087 :rozmiar(0), aktualna(0)
-<a name="l00088"></a>00088  {
-<a name="l00089"></a>00089  }
-<a name="l00090"></a>00090 
-<a name="l00098"></a><a class="code" href="classstos.html#a501f0a03fece3b29c32939355cd46154">00098</a> <span class="keywordtype">void</span> <a class="code" href="classstos.html#a501f0a03fece3b29c32939355cd46154" title="dodaje zmienn do stosu">stos::push</a>(<span class="keywordtype">int</span> dana)
-<a name="l00099"></a>00099 {
-<a name="l00100"></a>00100         <span class="keywordflow">if</span>(<a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>&gt;=<a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">rozmiar</a>)
-<a name="l00101"></a>00101         <a class="code" href="stos_8hh.html#acae4ff3359f7dda2fe2d2e82ec017d2c" title="wybor sposobu zwiekszania talicy ()-zwieksza dwukrotnie rozmiar tablicy ()-zwieksza o 1 rozmiar tabli...">ZWIEKSZ</a>
-<a name="l00102"></a>00102         <a class="code" href="classstos.html#a71155717d44c2156515be8edb1139358">tab</a>[<a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>]=dana;
-<a name="l00103"></a>00103         <a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>+=1;
-<a name="l00104"></a>00104 }
-<a name="l00110"></a><a class="code" href="classstos.html#a809ccf5ceabaa74dbd7c84c78102cded">00110</a> <span class="keywordtype">int</span> <a class="code" href="classstos.html#a809ccf5ceabaa74dbd7c84c78102cded" title="sciaga zmienna ze stosu">stos::pop</a>()
-<a name="l00111"></a>00111 {
-<a name="l00112"></a>00112         <span class="keywordtype">int</span> dana;
-<a name="l00113"></a>00113         dana=<a class="code" href="classstos.html#a71155717d44c2156515be8edb1139358">tab</a>[<a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>-1];
-<a name="l00114"></a>00114         <a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>-=1;
-<a name="l00115"></a>00115         <span class="keywordflow">if</span>(<a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>&lt;=(<a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">rozmiar</a>/4))<a class="code" href="classstos.html#aeabdfcdd334943a4a22a6f095bd7a873" title="Zmniejsza rozmar tablicy dwukrotnie.">zmniejsz</a>();
-<a name="l00116"></a>00116         <span class="comment">//dana=tab[rozmiar-1];</span>
-<a name="l00117"></a>00117         <span class="comment">//rozmiar-=1;</span>
-<a name="l00118"></a>00118         <span class="keywordflow">return</span> dana;
-<a name="l00119"></a>00119 }
-<a name="l00124"></a><a class="code" href="classstos.html#a28f9b17c72b4a91221e4bae54e169895">00124</a> <span class="keywordtype">bool</span> <a class="code" href="classstos.html#a28f9b17c72b4a91221e4bae54e169895" title="sprawdza czy jest cos na stosie;">stos::isempty</a>()
-<a name="l00125"></a>00125 {
-<a name="l00126"></a>00126         <span class="keywordflow">if</span>(<a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>==0)<span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00127"></a>00127         <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00128"></a>00128 }
-<a name="l00129"></a>00129 
-<a name="l00134"></a><a class="code" href="classstos.html#a47fcfe525e580ceb48080b33ab3d53de">00134</a> <span class="keywordtype">int</span> <a class="code" href="classstos.html#a47fcfe525e580ceb48080b33ab3d53de" title="sprawdza ilosc danych">stos::size</a>()
-<a name="l00135"></a>00135 {
-<a name="l00136"></a>00136         <span class="keywordflow">return</span> <a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>;
-<a name="l00137"></a>00137 }
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079 <span class="comment">//----------------------------------------------------------------------</span>
+<a name="l00080"></a>00080 <span class="comment">//*****************************PUBLIC***********************************</span>
+<a name="l00081"></a>00081 <span class="comment">//----------------------------------------------------------------------</span>
+<a name="l00082"></a>00082 
+<a name="l00087"></a><a class="code" href="classstos.html#afb387ac69250038334f6d8099b6a2421">00087</a> <a class="code" href="classstos.html#afb387ac69250038334f6d8099b6a2421" title="Konstruktor.">stos::stos</a>()
+<a name="l00088"></a>00088 :rozmiar(0), aktualna(0)
+<a name="l00089"></a>00089  {
+<a name="l00090"></a>00090  }
+<a name="l00091"></a>00091 
+<a name="l00099"></a><a class="code" href="classstos.html#a501f0a03fece3b29c32939355cd46154">00099</a> <span class="keywordtype">void</span> <a class="code" href="classstos.html#a501f0a03fece3b29c32939355cd46154" title="dodaje zmienn do stosu">stos::push</a>(<span class="keywordtype">int</span> dana)
+<a name="l00100"></a>00100 {
+<a name="l00101"></a>00101         <span class="keywordflow">if</span>(<a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>&gt;=<a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">rozmiar</a>)
+<a name="l00102"></a>00102         <a class="code" href="stos_8hh.html#acae4ff3359f7dda2fe2d2e82ec017d2c" title="wybor sposobu zwiekszania talicy ()-zwieksza dwukrotnie rozmiar tablicy ()-zwieksza o 1 rozmiar tabli...">ZWIEKSZ</a>
+<a name="l00103"></a>00103         <a class="code" href="classstos.html#a71155717d44c2156515be8edb1139358">tab</a>[<a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>]=dana;
+<a name="l00104"></a>00104         <a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>+=1;
+<a name="l00105"></a>00105 }
+<a name="l00111"></a><a class="code" href="classstos.html#a809ccf5ceabaa74dbd7c84c78102cded">00111</a> <span class="keywordtype">int</span> <a class="code" href="classstos.html#a809ccf5ceabaa74dbd7c84c78102cded" title="sciaga zmienna ze stosu">stos::pop</a>()
+<a name="l00112"></a>00112 {
+<a name="l00113"></a>00113         <span class="keywordtype">int</span> dana;
+<a name="l00114"></a>00114         dana=<a class="code" href="classstos.html#a71155717d44c2156515be8edb1139358">tab</a>[<a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>-1];
+<a name="l00115"></a>00115         <a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>-=1;
+<a name="l00116"></a>00116         <span class="keywordflow">if</span>(<a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>&lt;=(<a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">rozmiar</a>/4))<a class="code" href="classstos.html#aeabdfcdd334943a4a22a6f095bd7a873" title="Zmniejsza rozmar tablicy dwukrotnie.">zmniejsz</a>();
+<a name="l00117"></a>00117         <span class="comment">//dana=tab[rozmiar-1];</span>
+<a name="l00118"></a>00118         <span class="comment">//rozmiar-=1;</span>
+<a name="l00119"></a>00119         <span class="keywordflow">return</span> dana;
+<a name="l00120"></a>00120 }
+<a name="l00125"></a><a class="code" href="classstos.html#a28f9b17c72b4a91221e4bae54e169895">00125</a> <span class="keywordtype">bool</span> <a class="code" href="classstos.html#a28f9b17c72b4a91221e4bae54e169895" title="sprawdza czy jest cos na stosie;">stos::isempty</a>()
+<a name="l00126"></a>00126 {
+<a name="l00127"></a>00127         <span class="keywordflow">if</span>(<a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>==0)<span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00128"></a>00128         <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00129"></a>00129 }
+<a name="l00130"></a>00130 
+<a name="l00135"></a><a class="code" href="classstos.html#a47fcfe525e580ceb48080b33ab3d53de">00135</a> <span class="keywordtype">int</span> <a class="code" href="classstos.html#a47fcfe525e580ceb48080b33ab3d53de" title="sprawdza ilosc danych">stos::size</a>()
+<a name="l00136"></a>00136 {
+<a name="l00137"></a>00137         <span class="keywordflow">return</span> <a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>;
+<a name="l00138"></a>00138 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -216,7 +217,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
     <ul>
       <li class="navelem"><a class="el" href="stos_8cpp.html">stos.cpp</a>      </li>
 
-    <li class="footer">Wygenerowano Sun Mar 16 2014 22:27:27 dla stos_kolejka programem
+    <li class="footer">Wygenerowano Mon Mar 17 2014 02:24:11 dla My Project programem
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>
