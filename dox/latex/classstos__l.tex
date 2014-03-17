@@ -1,0 +1,141 @@
+\hypertarget{classstos__l}{\section{\-Dokumentacja klasy stos\-\_\-l}
+\label{classstos__l}\index{stos\-\_\-l@{stos\-\_\-l}}
+}
+
+
+{\ttfamily \#include $<$stos\-\_\-lista.\-hh$>$}
+
+
+
+\-Diagram współpracy dla stos\-\_\-l\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classstos__l__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classstos__l_a817f8251137659e6d2ec081a84ea7041}{stos\-\_\-l} ()
+\begin{DoxyCompactList}\small\item\em konstruktor zeruje zmienna rozmiar \end{DoxyCompactList}\item 
+void \hyperlink{classstos__l_abf3d6a7f9835928a68998e9afc569ce8}{push} (int dana)
+\item 
+int \hyperlink{classstos__l_a83201bb86938e636121af57fa989f763}{pop} ()
+\begin{DoxyCompactList}\small\item\em sciaga zmienna ze stosu \end{DoxyCompactList}\item 
+bool \hyperlink{classstos__l_adeab314853e583fd3e6acc50167fcba2}{isempty} ()
+\begin{DoxyCompactList}\small\item\em sprawdza czy stos jest pusty \end{DoxyCompactList}\item 
+int \hyperlink{classstos__l_a3f517d1349edbae56ca94b431baab318}{size} ()
+\begin{DoxyCompactList}\small\item\em sprawdza rozmiar stosu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structelement}{element} $\ast$ \hyperlink{classstos__l_ac11dcea9266fd7258405656624cfc1f3}{aktualny}
+\item 
+int \hyperlink{classstos__l_a2194604d2193df66d042756db760d1ff}{rozmiar}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+
+
+\-Definicja w linii 27 pliku stos\-\_\-lista.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{classstos__l_a817f8251137659e6d2ec081a84ea7041}{\index{stos\-\_\-l@{stos\-\_\-l}!stos\-\_\-l@{stos\-\_\-l}}
+\index{stos\-\_\-l@{stos\-\_\-l}!stos_l@{stos\-\_\-l}}
+\subsubsection[{stos\-\_\-l}]{\setlength{\rightskip}{0pt plus 5cm}{\bf stos\-\_\-l\-::stos\-\_\-l} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classstos__l_a817f8251137659e6d2ec081a84ea7041}
+
+
+\-Definicja w linii 14 pliku stos\-\_\-lista.\-cpp.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{classstos__l_adeab314853e583fd3e6acc50167fcba2}{\index{stos\-\_\-l@{stos\-\_\-l}!isempty@{isempty}}
+\index{isempty@{isempty}!stos_l@{stos\-\_\-l}}
+\subsubsection[{isempty}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf stos\-\_\-l\-::isempty} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classstos__l_adeab314853e583fd3e6acc50167fcba2}
+\begin{DoxyReturn}{\-Zwraca}
+1 pusty 0 pelny 
+\end{DoxyReturn}
+
+
+\-Definicja w linii 70 pliku stos\-\_\-lista.\-cpp.
+
+\hypertarget{classstos__l_a83201bb86938e636121af57fa989f763}{\index{stos\-\_\-l@{stos\-\_\-l}!pop@{pop}}
+\index{pop@{pop}!stos_l@{stos\-\_\-l}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf stos\-\_\-l\-::pop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classstos__l_a83201bb86938e636121af57fa989f763}
+\begin{DoxyReturn}{\-Zwraca}
+zmienna zdjeta ze stosu 
+\end{DoxyReturn}
+
+
+\-Definicja w linii 45 pliku stos\-\_\-lista.\-cpp.
+
+\hypertarget{classstos__l_abf3d6a7f9835928a68998e9afc569ce8}{\index{stos\-\_\-l@{stos\-\_\-l}!push@{push}}
+\index{push@{push}!stos_l@{stos\-\_\-l}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf stos\-\_\-l\-::push} (
+\begin{DoxyParamCaption}
+\item[{int}]{dana}
+\end{DoxyParamCaption}
+)}}\label{classstos__l_abf3d6a7f9835928a68998e9afc569ce8}
+dodaje zmienna na szczty stosu 
+\begin{DoxyParams}{\-Parametry}
+{\em dana} & zmienna do dodania \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 23 pliku stos\-\_\-lista.\-cpp.
+
+\hypertarget{classstos__l_a3f517d1349edbae56ca94b431baab318}{\index{stos\-\_\-l@{stos\-\_\-l}!size@{size}}
+\index{size@{size}!stos_l@{stos\-\_\-l}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf stos\-\_\-l\-::size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classstos__l_a3f517d1349edbae56ca94b431baab318}
+\begin{DoxyReturn}{\-Zwraca}
+rozmiar stosu 
+\end{DoxyReturn}
+
+
+\-Definicja w linii 61 pliku stos\-\_\-lista.\-cpp.
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{classstos__l_ac11dcea9266fd7258405656624cfc1f3}{\index{stos\-\_\-l@{stos\-\_\-l}!aktualny@{aktualny}}
+\index{aktualny@{aktualny}!stos_l@{stos\-\_\-l}}
+\subsubsection[{aktualny}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element}$\ast$ {\bf stos\-\_\-l\-::aktualny}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classstos__l_ac11dcea9266fd7258405656624cfc1f3}
+
+
+\-Definicja w linii 30 pliku stos\-\_\-lista.\-hh.
+
+\hypertarget{classstos__l_a2194604d2193df66d042756db760d1ff}{\index{stos\-\_\-l@{stos\-\_\-l}!rozmiar@{rozmiar}}
+\index{rozmiar@{rozmiar}!stos_l@{stos\-\_\-l}}
+\subsubsection[{rozmiar}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf stos\-\_\-l\-::rozmiar}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classstos__l_a2194604d2193df66d042756db760d1ff}
+
+
+\-Definicja w linii 31 pliku stos\-\_\-lista.\-hh.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+prj/src/\hyperlink{stos__lista_8hh}{stos\-\_\-lista.\-hh}\item 
+prj/src/\hyperlink{stos__lista_8cpp}{stos\-\_\-lista.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,172 @@
+\hypertarget{classkolejka}{\section{\-Dokumentacja klasy kolejka}
+\label{classkolejka}\index{kolejka@{kolejka}}
+}
+
+
+{\ttfamily \#include $<$kolejka\-\_\-lista.\-hh$>$}
+
+
+
+\-Diagram współpracy dla kolejka\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classkolejka__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classkolejka_ae9205d86a1f136649fac28615878729c}{kolejka} ()
+\begin{DoxyCompactList}\small\item\em konstruktor klasy kolejka, zeruje stałą rozmiar; \end{DoxyCompactList}\item 
+void \hyperlink{classkolejka_a090a263c1b0e37c3e447ffbf577da590}{push} (int dana)
+\begin{DoxyCompactList}\small\item\em dodaje na koniec kolejki zmienna \end{DoxyCompactList}\item 
+int \hyperlink{classkolejka_afdf5d84aff3c9500e696d3b6df092ace}{pop} ()
+\begin{DoxyCompactList}\small\item\em zdejmuje pierwszy element z kolejki \end{DoxyCompactList}\item 
+bool \hyperlink{classkolejka_adf983aef6073856cba88f5d75b9cd084}{isempty} ()
+\item 
+int \hyperlink{classkolejka_a74bf7134474481c349d08d0fd321390e}{size} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structelement}{element} $\ast$ \hyperlink{classkolejka_a71d1822dbeb8c1b76339c2429f0527c2}{poczatek}
+\item 
+\hyperlink{structelement}{element} $\ast$ \hyperlink{classkolejka_a60ae9fd137487acc5dc01dbe467fc7cc}{koniec}
+\item 
+int \hyperlink{classkolejka_a0fe33a7248ca72a87c55ab9e56c0e172}{rozmiar}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+
+
+\-Definicja w linii 26 pliku kolejka\-\_\-lista.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{classkolejka_ae9205d86a1f136649fac28615878729c}{\index{kolejka@{kolejka}!kolejka@{kolejka}}
+\index{kolejka@{kolejka}!kolejka@{kolejka}}
+\subsubsection[{kolejka}]{\setlength{\rightskip}{0pt plus 5cm}{\bf kolejka\-::kolejka} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classkolejka_ae9205d86a1f136649fac28615878729c}
+
+
+\-Definicja w linii 11 pliku kolejka\-\_\-lista.\-cpp.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{classkolejka_adf983aef6073856cba88f5d75b9cd084}{\index{kolejka@{kolejka}!isempty@{isempty}}
+\index{isempty@{isempty}!kolejka@{kolejka}}
+\subsubsection[{isempty}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf kolejka\-::isempty} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classkolejka_adf983aef6073856cba88f5d75b9cd084}
+\begin{DoxyReturn}{\-Zwraca}
+1 jesli pusta jesli pelna 
+\end{DoxyReturn}
+
+
+\-Definicja w linii 64 pliku kolejka\-\_\-lista.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{classkolejka_adf983aef6073856cba88f5d75b9cd084_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classkolejka_afdf5d84aff3c9500e696d3b6df092ace}{\index{kolejka@{kolejka}!pop@{pop}}
+\index{pop@{pop}!kolejka@{kolejka}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf kolejka\-::pop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classkolejka_afdf5d84aff3c9500e696d3b6df092ace}
+\begin{DoxyReturn}{\-Zwraca}
+zwraca element znajdujacy sie na poczatku kolejki 
+\end{DoxyReturn}
+
+
+\-Definicja w linii 38 pliku kolejka\-\_\-lista.\-cpp.
+
+\hypertarget{classkolejka_a090a263c1b0e37c3e447ffbf577da590}{\index{kolejka@{kolejka}!push@{push}}
+\index{push@{push}!kolejka@{kolejka}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf kolejka\-::push} (
+\begin{DoxyParamCaption}
+\item[{int}]{dana}
+\end{DoxyParamCaption}
+)}}\label{classkolejka_a090a263c1b0e37c3e447ffbf577da590}
+
+\begin{DoxyParams}{\-Parametry}
+{\em dana} & zmienna ktora zostanie dodana \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 20 pliku kolejka\-\_\-lista.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{classkolejka_a090a263c1b0e37c3e447ffbf577da590_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classkolejka_a74bf7134474481c349d08d0fd321390e}{\index{kolejka@{kolejka}!size@{size}}
+\index{size@{size}!kolejka@{kolejka}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf kolejka\-::size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classkolejka_a74bf7134474481c349d08d0fd321390e}
+\begin{DoxyReturn}{\-Zwraca}
+zwraca rozmiar kolejki 
+\end{DoxyReturn}
+
+
+\-Definicja w linii 55 pliku kolejka\-\_\-lista.\-cpp.
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{classkolejka_a60ae9fd137487acc5dc01dbe467fc7cc}{\index{kolejka@{kolejka}!koniec@{koniec}}
+\index{koniec@{koniec}!kolejka@{kolejka}}
+\subsubsection[{koniec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element}$\ast$ {\bf kolejka\-::koniec}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classkolejka_a60ae9fd137487acc5dc01dbe467fc7cc}
+
+
+\-Definicja w linii 30 pliku kolejka\-\_\-lista.\-hh.
+
+\hypertarget{classkolejka_a71d1822dbeb8c1b76339c2429f0527c2}{\index{kolejka@{kolejka}!poczatek@{poczatek}}
+\index{poczatek@{poczatek}!kolejka@{kolejka}}
+\subsubsection[{poczatek}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element}$\ast$ {\bf kolejka\-::poczatek}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classkolejka_a71d1822dbeb8c1b76339c2429f0527c2}
+
+
+\-Definicja w linii 29 pliku kolejka\-\_\-lista.\-hh.
+
+\hypertarget{classkolejka_a0fe33a7248ca72a87c55ab9e56c0e172}{\index{kolejka@{kolejka}!rozmiar@{rozmiar}}
+\index{rozmiar@{rozmiar}!kolejka@{kolejka}}
+\subsubsection[{rozmiar}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf kolejka\-::rozmiar}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classkolejka_a0fe33a7248ca72a87c55ab9e56c0e172}
+
+
+\-Definicja w linii 31 pliku kolejka\-\_\-lista.\-hh.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+prj/src/\hyperlink{kolejka__lista_8hh}{kolejka\-\_\-lista.\-hh}\item 
+prj/src/\hyperlink{kolejka__lista_8cpp}{kolejka\-\_\-lista.\-cpp}\end{DoxyCompactItemize}

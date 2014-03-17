@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$generator_8cpp.html#a8a338f908bb9996d5b01aab4439e8a56" title="generuje plik *.txt o zadanej ilosci danych i nazwie" alt="" coords="123,5,187,35"/>
+<area shape="rect" id="node5" href="$classczas.html#a1e4c793526806f459e7f5c8c4a3ae29f" title="start pomiaru zapisuje stan zegara" alt="" coords="113,59,196,88"/>
+<area shape="rect" id="node7" href="$classstos.html#a501f0a03fece3b29c32939355cd46154" title="dodaje zmienn do stosu" alt="" coords="113,112,196,141"/>
+<area shape="rect" id="node9" href="$classczas.html#a27f391e3c6bfb1f15f97c61bf403eb2d" title="koniec pomiaru zapisuje stan zegara" alt="" coords="113,165,196,195"/>
+<area shape="rect" id="node11" href="$classstos.html#a809ccf5ceabaa74dbd7c84c78102cded" title="sciaga zmienna ze stosu" alt="" coords="117,219,192,248"/>
+<area shape="rect" id="node17" href="$classczas.html#a253df7797ca3cc3447d24c3c9477768e" title="zwraca wynik pomiaru" alt="" coords="109,272,200,301"/>
+<area shape="rect" id="node19" href="$classczas.html#a53e5d67a7dd77239f2ef6ae0866e0596" title="zapisuje wynik do pliku" alt="" coords="107,325,203,355"/>
+<area shape="rect" id="node21" href="$classstos.html#a47fcfe525e580ceb48080b33ab3d53de" title="sprawdza ilosc danych" alt="" coords="116,379,193,408"/>
+<area shape="rect" id="node23" href="$classstos.html#a28f9b17c72b4a91221e4bae54e169895" title="sprawdza czy jest cos na stosie;" alt="" coords="104,432,205,461"/>
+<area shape="rect" id="node13" href="$classstos.html#aeabdfcdd334943a4a22a6f095bd7a873" title="Zmniejsza rozmar tablicy dwukrotnie." alt="" coords="253,219,360,248"/>
+<area shape="rect" id="node15" href="$classstos.html#ae5ace69c31d9de2f24eb872895216bf3" title="kopiuje zawartosc jednej tablicy do drugiej" alt="" coords="409,219,497,248"/>
+</map>

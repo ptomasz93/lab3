@@ -1,0 +1,94 @@
+\documentclass[a4paper]{book}
+\usepackage{makeidx}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage[T1]{fontenc}
+
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{sectsty}
+\usepackage[titles]{tocloft}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=8,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\familydefault}{\sfdefault}
+\hfuzz=15pt
+\setlength{\emergencystretch}{15pt}
+\hbadness=750
+\tolerance=750
+\begin{document}
+\hypersetup{pageanchor=false,citecolor=blue}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large stos\-\_\-kolejka }\\
+\vspace*{1cm}
+{\large \-Wygenerowano przez Doxygen 1.7.6.1}\\
+\vspace*{0.5cm}
+{\small Sun Mar 16 2014 22:27:27}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true,citecolor=blue}
+\chapter{\-Struktura katalogów}
+\input{dirs}
+\chapter{\-Indeks klas}
+\input{annotated}
+\chapter{\-Indeks plików}
+\input{files}
+\chapter{\-Dokumentacja katalogów}
+\input{dir_72ac3c5f818c04dc42fe82d0bf8fa612}
+\input{dir_ffb8ee22a3ecf475aaff9fbae649efc7}
+\chapter{\-Dokumentacja klas}
+\input{classczas}
+\input{structelement}
+\input{classkolejka}
+\input{classstos}
+\input{classstos__l}
+\chapter{\-Dokumentacja plików}
+\input{generator_8cpp}
+\input{generator_8hh}
+\input{kolejka__lista_8cpp}
+\input{kolejka__lista_8hh}
+\input{main_8cpp}
+\input{stoper_8hh}
+\input{stos_8cpp}
+\input{stos_8hh}
+\input{stos__lista_8cpp}
+\input{stos__lista_8hh}
+\printindex
+\end{document}

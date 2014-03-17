@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>stos_kolejka: Plik źródłowy prj/src/main.cpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">stos_kolejka
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('main_8cpp.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
+<a name="l00002"></a>00002 <span class="comment"> * main.cpp</span>
+<a name="l00003"></a>00003 <span class="comment"> *</span>
+<a name="l00004"></a>00004 <span class="comment"> *  Created on: 13-03-2014</span>
+<a name="l00005"></a>00005 <span class="comment"> *      Author: root</span>
+<a name="l00006"></a>00006 <span class="comment"> */</span>
+<a name="l00007"></a>00007 <span class="comment">//#define R 1000 //rozmiar</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="stos_8hh.html">stos.hh</a>&quot;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;<a class="code" href="stos__lista_8hh.html">stos_lista.hh</a>&quot;</span>
+<a name="l00012"></a>00012 <span class="comment">//#include &quot;kolejka_lista.hh&quot;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="generator_8hh.html">generator.hh</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="stoper_8hh.html">stoper.hh</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="keyword">using namespace </span>std;
+<a name="l00016"></a>00016 
+<a name="l00017"></a><a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">00017</a> <span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()
+<a name="l00018"></a>00018 {
+<a name="l00019"></a>00019         <a class="code" href="classstos.html">stos</a> danych;
+<a name="l00020"></a>00020 <span class="comment">//      stos_l danych;</span>
+<a name="l00021"></a>00021         <a class="code" href="classczas.html">czas</a> stoper;
+<a name="l00022"></a>00022 <span class="comment">//      kolejka danych;</span>
+<a name="l00023"></a>00023         fstream wejsciowe, wyniki;
+<a name="l00024"></a>00024         wyniki.open(<span class="stringliteral">&quot;czas_stos_t+1.txt&quot;</span>,ios::out);
+<a name="l00025"></a>00025         <span class="keywordtype">int</span> rozmiar;
+<a name="l00026"></a>00026         <span class="keywordtype">int</span> il=0;
+<a name="l00027"></a>00027         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> b=0;b&lt;20;b++)
+<a name="l00028"></a>00028         {
+<a name="l00029"></a>00029                 il+=50000;
+<a name="l00030"></a>00030                 <a class="code" href="generator_8cpp.html#a8a338f908bb9996d5b01aab4439e8a56" title="generuje plik *.txt o zadanej ilosci danych i nazwie">generuj</a>(<span class="stringliteral">&quot;wejsciowe&quot;</span>,il);
+<a name="l00031"></a>00031                 wejsciowe.open(<span class="stringliteral">&quot;wejsciowe&quot;</span>);
+<a name="l00032"></a>00032                 wejsciowe&gt;&gt;rozmiar;
+<a name="l00033"></a>00033                         stoper.<a class="code" href="classczas.html#a1e4c793526806f459e7f5c8c4a3ae29f" title="start pomiaru zapisuje stan zegara">start</a>();
+<a name="l00034"></a>00034                         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;rozmiar;i++)
+<a name="l00035"></a>00035                         {
+<a name="l00036"></a>00036                                 <span class="keywordtype">int</span> a;
+<a name="l00037"></a>00037                                 wejsciowe&gt;&gt;a;
+<a name="l00038"></a>00038                                 danych.<a class="code" href="classstos.html#a501f0a03fece3b29c32939355cd46154" title="dodaje zmienn do stosu">push</a>(a);
+<a name="l00039"></a>00039                         }
+<a name="l00040"></a>00040                         stoper.<a class="code" href="classczas.html#a27f391e3c6bfb1f15f97c61bf403eb2d" title="koniec pomiaru zapisuje stan zegara">stop</a>();
+<a name="l00041"></a>00041                                 <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;rozmiar;i++)
+<a name="l00042"></a>00042                                 {
+<a name="l00043"></a>00043                                 danych.<a class="code" href="classstos.html#a809ccf5ceabaa74dbd7c84c78102cded" title="sciaga zmienna ze stosu">pop</a>();
+<a name="l00044"></a>00044                                 }
+<a name="l00045"></a>00045                 cout&lt;&lt;<span class="stringliteral">&quot;czas tworzenia stosu: &quot;</span>&lt;&lt;stoper.<a class="code" href="classczas.html#a253df7797ca3cc3447d24c3c9477768e" title="zwraca wynik pomiaru">wynik</a>()&lt;&lt;<span class="stringliteral">&quot;s\n&quot;</span>;
+<a name="l00046"></a>00046                 stoper.<a class="code" href="classczas.html#a53e5d67a7dd77239f2ef6ae0866e0596" title="zapisuje wynik do pliku">zapisz</a>(wyniki,rozmiar);
+<a name="l00047"></a>00047                 wejsciowe.close();
+<a name="l00048"></a>00048         <span class="comment">//      cout&lt;&lt;&quot;teraz stos ma rozmiar: &quot;&lt;&lt;danych.size()&lt;&lt;&quot;\n&quot;&lt;&lt;&quot;jest pusty? &quot;&lt;&lt;danych.isempty()&lt;&lt;&quot;\n&quot;;</span>
+<a name="l00049"></a>00049         <span class="comment">//      cout&lt;&lt;&quot;sciagamy i wyswietlamy;\n&quot;;</span>
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051         }
+<a name="l00052"></a>00052         cout&lt;&lt;<span class="stringliteral">&quot;teraz stos ma rozmiar: &quot;</span>&lt;&lt;danych.<a class="code" href="classstos.html#a47fcfe525e580ceb48080b33ab3d53de" title="sprawdza ilosc danych">size</a>()&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>&lt;&lt;<span class="stringliteral">&quot;jest pusty? &quot;</span>&lt;&lt;danych.<a class="code" href="classstos.html#a28f9b17c72b4a91221e4bae54e169895" title="sprawdza czy jest cos na stosie;">isempty</a>()&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;
+<a name="l00053"></a>00053         wyniki.close();
+<a name="l00054"></a>00054 }
+<a name="l00055"></a>00055 
+<a name="l00056"></a>00056 
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a>      </li>
+
+    <li class="footer">Wygenerowano Sun Mar 16 2014 22:27:27 dla stos_kolejka programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

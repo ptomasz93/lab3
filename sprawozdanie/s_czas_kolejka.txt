@@ -1,0 +1,7 @@
+set terminal eps
+set output 'czas_kolejka.eps'
+set title "czas wykonywania kolejki"
+set xlabel "il. danych"
+set ylabel "czas [s]
+plot 'czas_kolejka.txt' using 1 : 2 smooth bezier
+unset output

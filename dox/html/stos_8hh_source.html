@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>stos_kolejka: Plik źródłowy prj/src/stos.hh</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">stos_kolejka
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('stos_8hh.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">stos.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="stos_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
+<a name="l00002"></a>00002 <span class="comment"> * stos.hh</span>
+<a name="l00003"></a>00003 <span class="comment"> *</span>
+<a name="l00004"></a>00004 <span class="comment"> *  Created on: 13-03-2014</span>
+<a name="l00005"></a>00005 <span class="comment"> *      Author: root</span>
+<a name="l00006"></a>00006 <span class="comment"> */</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="preprocessor">#ifndef STOS_HH_</span>
+<a name="l00009"></a>00009 <span class="preprocessor"></span><span class="preprocessor">#define STOS_HH_</span>
+<a name="l00010"></a>00010 <span class="preprocessor"></span>
+<a name="l00016"></a><a class="code" href="stos_8hh.html#acae4ff3359f7dda2fe2d2e82ec017d2c">00016</a> <span class="preprocessor">#define ZWIEKSZ zwieksz_o_1();</span>
+<a name="l00017"></a>00017 <span class="preprocessor"></span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &lt;cstring&gt;</span>
+<a name="l00020"></a>00020 
+<a name="l00025"></a><a class="code" href="classstos.html">00025</a> <span class="keyword">class </span><a class="code" href="classstos.html">stos</a>
+<a name="l00026"></a>00026 {
+<a name="l00027"></a>00027 <span class="keyword">private</span>:
+<a name="l00028"></a><a class="code" href="classstos.html#a71155717d44c2156515be8edb1139358">00028</a>         <span class="keywordtype">int</span>* <a class="code" href="classstos.html#a71155717d44c2156515be8edb1139358">tab</a>;
+<a name="l00029"></a><a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">00029</a>         <span class="keywordtype">int</span> <a class="code" href="classstos.html#aaccd7c15d97e23313862cca67f56f3ab">rozmiar</a>;
+<a name="l00030"></a><a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">00030</a>         <span class="keywordtype">int</span> <a class="code" href="classstos.html#a5769bde313093eb321b0b15111c7ec35">aktualna</a>;
+<a name="l00031"></a>00031         <span class="keywordtype">void</span> <a class="code" href="classstos.html#aaf0cbb2759166f5c8ade9db7edd12e71" title="zweikasza dwukrotnie rozmiar stosu gdy brakuje miejsca">zwieksz_dwa</a>();
+<a name="l00032"></a>00032         <span class="keywordtype">void</span> <a class="code" href="classstos.html#a46a2e2a17327297ca70b40ff39524cef" title="zwieksza rozmiar tablicy o 1">zwieksz_o_1</a>();
+<a name="l00033"></a>00033         <span class="keywordtype">void</span> <a class="code" href="classstos.html#a7eaf47bc9feeea0777e07f89d0d304cf">zwieksz</a>();
+<a name="l00034"></a>00034         <span class="keywordtype">void</span> <a class="code" href="classstos.html#ae5ace69c31d9de2f24eb872895216bf3" title="kopiuje zawartosc jednej tablicy do drugiej">kopiuj</a>(<span class="keywordtype">int</span>* s_tab );
+<a name="l00035"></a>00035         <span class="keywordtype">void</span> <a class="code" href="classstos.html#aeabdfcdd334943a4a22a6f095bd7a873" title="Zmniejsza rozmar tablicy dwukrotnie.">zmniejsz</a>();
+<a name="l00036"></a>00036 <span class="keyword">public</span>:
+<a name="l00037"></a>00037         <a class="code" href="classstos.html#afb387ac69250038334f6d8099b6a2421" title="Konstruktor.">stos</a>();
+<a name="l00038"></a>00038         <span class="keywordtype">void</span> <a class="code" href="classstos.html#a501f0a03fece3b29c32939355cd46154" title="dodaje zmienn do stosu">push</a>(<span class="keywordtype">int</span> dana);
+<a name="l00039"></a>00039         <span class="keywordtype">int</span> <a class="code" href="classstos.html#a809ccf5ceabaa74dbd7c84c78102cded" title="sciaga zmienna ze stosu">pop</a>();
+<a name="l00040"></a>00040         <span class="keywordtype">bool</span> <a class="code" href="classstos.html#a28f9b17c72b4a91221e4bae54e169895" title="sprawdza czy jest cos na stosie;">isempty</a>();
+<a name="l00041"></a>00041         <span class="keywordtype">int</span> <a class="code" href="classstos.html#a47fcfe525e580ceb48080b33ab3d53de" title="sprawdza ilosc danych">size</a>();
+<a name="l00042"></a>00042 };
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045 <span class="preprocessor">#endif </span><span class="comment">/* STOS_HH_ */</span>
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="stos_8hh.html">stos.hh</a>      </li>
+
+    <li class="footer">Wygenerowano Sun Mar 16 2014 22:27:27 dla stos_kolejka programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

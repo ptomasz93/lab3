@@ -1,0 +1,7 @@
+set terminal png
+set output 'czas_stos_tx2.png'
+set title "stos na tablicy zwiekszanej x2"
+set xlabel "il. danych"
+set ylabel "czas [s]
+plot 'czas_stos_tx2.txt' using 1 : 2 smooth bezier
+unset output

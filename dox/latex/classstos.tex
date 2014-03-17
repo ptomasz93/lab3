@@ -1,0 +1,324 @@
+\hypertarget{classstos}{\section{\-Dokumentacja klasy stos}
+\label{classstos}\index{stos@{stos}}
+}
+
+
+{\ttfamily \#include $<$stos.\-hh$>$}
+
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classstos_afb387ac69250038334f6d8099b6a2421}{stos} ()
+\begin{DoxyCompactList}\small\item\em \-Konstruktor. \end{DoxyCompactList}\item 
+void \hyperlink{classstos_a501f0a03fece3b29c32939355cd46154}{push} (int dana)
+\begin{DoxyCompactList}\small\item\em dodaje zmienn do stosu \end{DoxyCompactList}\item 
+int \hyperlink{classstos_a809ccf5ceabaa74dbd7c84c78102cded}{pop} ()
+\begin{DoxyCompactList}\small\item\em sciaga zmienna ze stosu \end{DoxyCompactList}\item 
+bool \hyperlink{classstos_a28f9b17c72b4a91221e4bae54e169895}{isempty} ()
+\begin{DoxyCompactList}\small\item\em sprawdza czy jest cos na stosie; \end{DoxyCompactList}\item 
+int \hyperlink{classstos_a47fcfe525e580ceb48080b33ab3d53de}{size} ()
+\begin{DoxyCompactList}\small\item\em sprawdza ilosc danych \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classstos_aaf0cbb2759166f5c8ade9db7edd12e71}{zwieksz\-\_\-dwa} ()
+\begin{DoxyCompactList}\small\item\em zweikasza dwukrotnie rozmiar stosu gdy brakuje miejsca \end{DoxyCompactList}\item 
+void \hyperlink{classstos_a46a2e2a17327297ca70b40ff39524cef}{zwieksz\-\_\-o\-\_\-1} ()
+\begin{DoxyCompactList}\small\item\em zwieksza rozmiar tablicy o 1 \end{DoxyCompactList}\item 
+void \hyperlink{classstos_a7eaf47bc9feeea0777e07f89d0d304cf}{zwieksz} ()
+\item 
+void \hyperlink{classstos_ae5ace69c31d9de2f24eb872895216bf3}{kopiuj} (int $\ast$s\-\_\-tab)
+\begin{DoxyCompactList}\small\item\em kopiuje zawartosc jednej tablicy do drugiej \end{DoxyCompactList}\item 
+void \hyperlink{classstos_aeabdfcdd334943a4a22a6f095bd7a873}{zmniejsz} ()
+\begin{DoxyCompactList}\small\item\em \-Zmniejsza rozmar tablicy dwukrotnie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \hyperlink{classstos_a71155717d44c2156515be8edb1139358}{tab}
+\item 
+int \hyperlink{classstos_aaccd7c15d97e23313862cca67f56f3ab}{rozmiar}
+\item 
+int \hyperlink{classstos_a5769bde313093eb321b0b15111c7ec35}{aktualna}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+
+
+\-Definicja w linii 25 pliku stos.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{classstos_afb387ac69250038334f6d8099b6a2421}{\index{stos@{stos}!stos@{stos}}
+\index{stos@{stos}!stos@{stos}}
+\subsubsection[{stos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf stos\-::stos} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classstos_afb387ac69250038334f6d8099b6a2421}
+\-Zeruje zmienna rozmiar i aktualna 
+
+\-Definicja w linii 86 pliku stos.\-cpp.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{classstos_a28f9b17c72b4a91221e4bae54e169895}{\index{stos@{stos}!isempty@{isempty}}
+\index{isempty@{isempty}!stos@{stos}}
+\subsubsection[{isempty}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf stos\-::isempty} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classstos_a28f9b17c72b4a91221e4bae54e169895}
+\begin{DoxyReturn}{\-Zwraca}
+zwraca 1 gdy pusta 
+\end{DoxyReturn}
+
+
+\-Definicja w linii 124 pliku stos.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classstos_a28f9b17c72b4a91221e4bae54e169895_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classstos_ae5ace69c31d9de2f24eb872895216bf3}{\index{stos@{stos}!kopiuj@{kopiuj}}
+\index{kopiuj@{kopiuj}!stos@{stos}}
+\subsubsection[{kopiuj}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf stos\-::kopiuj} (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{s\-\_\-tab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classstos_ae5ace69c31d9de2f24eb872895216bf3}
+
+\begin{DoxyParams}{\-Parametry}
+{\em s\-\_\-tab} & \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 18 pliku stos.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstos_ae5ace69c31d9de2f24eb872895216bf3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classstos_a809ccf5ceabaa74dbd7c84c78102cded}{\index{stos@{stos}!pop@{pop}}
+\index{pop@{pop}!stos@{stos}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf stos\-::pop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classstos_a809ccf5ceabaa74dbd7c84c78102cded}
+\-Sprawdza rowniez rozmiar tablicy. \-Jesli tablica zajeta w 1/4 zmniejsza jej rozmiar o polowe. \begin{DoxyReturn}{\-Zwraca}
+
+\end{DoxyReturn}
+
+
+\-Definicja w linii 110 pliku stos.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstos_a809ccf5ceabaa74dbd7c84c78102cded_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classstos_a809ccf5ceabaa74dbd7c84c78102cded_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classstos_a501f0a03fece3b29c32939355cd46154}{\index{stos@{stos}!push@{push}}
+\index{push@{push}!stos@{stos}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf stos\-::push} (
+\begin{DoxyParamCaption}
+\item[{int}]{dana}
+\end{DoxyParamCaption}
+)}}\label{classstos_a501f0a03fece3b29c32939355cd46154}
+funkcja sprawdza czy tablica nie jest zapelniona i dodaje zienna.
+
+\-Jesli tablica pelna wywoluje funkcje zwiekszajaca jej rozmiar
+
+\-Z\-W\-I\-E\-K\-S\-Z-\/ definicja w pliku \hyperlink{stos_8hh}{stos.\-hh} 
+\begin{DoxyParams}{\-Parametry}
+{\em dana} & \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 98 pliku stos.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classstos_a501f0a03fece3b29c32939355cd46154_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classstos_a47fcfe525e580ceb48080b33ab3d53de}{\index{stos@{stos}!size@{size}}
+\index{size@{size}!stos@{stos}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf stos\-::size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classstos_a47fcfe525e580ceb48080b33ab3d53de}
+\begin{DoxyReturn}{\-Zwraca}
+ilosc zmiennych w stosie; 
+\end{DoxyReturn}
+
+
+\-Definicja w linii 134 pliku stos.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classstos_a47fcfe525e580ceb48080b33ab3d53de_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classstos_aeabdfcdd334943a4a22a6f095bd7a873}{\index{stos@{stos}!zmniejsz@{zmniejsz}}
+\index{zmniejsz@{zmniejsz}!stos@{stos}}
+\subsubsection[{zmniejsz}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf stos\-::zmniejsz} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classstos_aeabdfcdd334943a4a22a6f095bd7a873}
+gdy stos zajmuje 1/4 rozmiaru tablicy jest ona zmniejszana o 1/2 
+
+\-Definicja w linii 61 pliku stos.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classstos_aeabdfcdd334943a4a22a6f095bd7a873_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classstos_aeabdfcdd334943a4a22a6f095bd7a873_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classstos_a7eaf47bc9feeea0777e07f89d0d304cf}{\index{stos@{stos}!zwieksz@{zwieksz}}
+\index{zwieksz@{zwieksz}!stos@{stos}}
+\subsubsection[{zwieksz}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf stos\-::zwieksz} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classstos_a7eaf47bc9feeea0777e07f89d0d304cf}
+\hypertarget{classstos_aaf0cbb2759166f5c8ade9db7edd12e71}{\index{stos@{stos}!zwieksz\-\_\-dwa@{zwieksz\-\_\-dwa}}
+\index{zwieksz\-\_\-dwa@{zwieksz\-\_\-dwa}!stos@{stos}}
+\subsubsection[{zwieksz\-\_\-dwa}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf stos\-::zwieksz\-\_\-dwa} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classstos_aaf0cbb2759166f5c8ade9db7edd12e71}
+
+
+\-Definicja w linii 25 pliku stos.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{classstos_aaf0cbb2759166f5c8ade9db7edd12e71_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classstos_a46a2e2a17327297ca70b40ff39524cef}{\index{stos@{stos}!zwieksz\-\_\-o\-\_\-1@{zwieksz\-\_\-o\-\_\-1}}
+\index{zwieksz\-\_\-o\-\_\-1@{zwieksz\-\_\-o\-\_\-1}!stos@{stos}}
+\subsubsection[{zwieksz\-\_\-o\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf stos\-::zwieksz\-\_\-o\-\_\-1} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classstos_a46a2e2a17327297ca70b40ff39524cef}
+
+
+\-Definicja w linii 46 pliku stos.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classstos_a46a2e2a17327297ca70b40ff39524cef_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{classstos_a5769bde313093eb321b0b15111c7ec35}{\index{stos@{stos}!aktualna@{aktualna}}
+\index{aktualna@{aktualna}!stos@{stos}}
+\subsubsection[{aktualna}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf stos\-::aktualna}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classstos_a5769bde313093eb321b0b15111c7ec35}
+
+
+\-Definicja w linii 30 pliku stos.\-hh.
+
+\hypertarget{classstos_aaccd7c15d97e23313862cca67f56f3ab}{\index{stos@{stos}!rozmiar@{rozmiar}}
+\index{rozmiar@{rozmiar}!stos@{stos}}
+\subsubsection[{rozmiar}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf stos\-::rozmiar}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classstos_aaccd7c15d97e23313862cca67f56f3ab}
+
+
+\-Definicja w linii 29 pliku stos.\-hh.
+
+\hypertarget{classstos_a71155717d44c2156515be8edb1139358}{\index{stos@{stos}!tab@{tab}}
+\index{tab@{tab}!stos@{stos}}
+\subsubsection[{tab}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf stos\-::tab}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classstos_a71155717d44c2156515be8edb1139358}
+
+
+\-Definicja w linii 28 pliku stos.\-hh.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+prj/src/\hyperlink{stos_8hh}{stos.\-hh}\item 
+prj/src/\hyperlink{stos_8cpp}{stos.\-cpp}\end{DoxyCompactItemize}
