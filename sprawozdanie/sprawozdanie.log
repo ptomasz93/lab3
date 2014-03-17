@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.1)  17 MAR 2014 02:07
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.1)  17 MAR 2014 03:38
 entering extended mode
  %&-line parsing enabled.
 **sprawozdanie.tex
@@ -433,7 +433,7 @@ Here is how much of TeX's memory you used:
 public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmr17.pfb>
-Output written on sprawozdanie.pdf (5 pages, 135612 bytes).
+Output written on sprawozdanie.pdf (5 pages, 135610 bytes).
 PDF statistics:
  43 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
